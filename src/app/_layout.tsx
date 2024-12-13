@@ -1,5 +1,5 @@
-import { Stack } from "expo-router";
-import { colors } from "@/styles/theme";
+import { Stack } from "expo-router"
+import { colors } from "@/styles/theme"
 
 import {
   useFonts,
@@ -7,7 +7,9 @@ import {
   Rubik_400Regular,
   Rubik_500Medium,
   Rubik_700Bold,
-} from "@expo-google-fonts/rubik";
+} from "@expo-google-fonts/rubik"
+
+import { Loading } from "@/components/loading"
 
 export default function Layout() {
   const [fontsLoaded] = useFonts({
@@ -15,10 +17,10 @@ export default function Layout() {
     Rubik_400Regular,
     Rubik_500Medium,
     Rubik_700Bold,
-  });
+  })
 
   if (!fontsLoaded) {
-    return;
+    return <Loading />
   }
 
   return (
@@ -28,5 +30,5 @@ export default function Layout() {
         contentStyle: { backgroundColor: colors.gray[100] },
       }}
     />
-  );
+  )
 }
