@@ -2,6 +2,7 @@ import { View, Text } from "react-native"
 import { IconPhone, IconMapPin, IconTicket } from "@tabler/icons-react-native"
 
 import { Info } from "@/components/market/info"
+
 import { s } from "./styles"
 
 export type PropsDetails = {
