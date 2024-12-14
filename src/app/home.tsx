@@ -4,7 +4,7 @@ import MapView, { Callout, Marker } from "react-native-maps"
 import * as Location from "expo-location"
 import { router } from "expo-router"
 
-import { api } from "@/services/api"
+import { api } from "@/assets/services/api"
 import { fontFamily, colors } from "@/styles/theme"
 
 import { Places } from "@/components/places"
